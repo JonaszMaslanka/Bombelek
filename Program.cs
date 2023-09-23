@@ -2,18 +2,18 @@
 using System;
 //Zmienne
 
-int[] zbiory = { 18, 8, 1, 2, 5, 3 };
+int[] zbiory = { 9,5,2,0,6};
 int[] newSeries = new int[zbiory.Length];
 
 // Program
-
-
-
+Bombelek(zbiory);
+kopiuj(zbiory, newSeries);
+Console.Write("Zdumiewający efekt koncowy: ");
 
 foreach (var item in newSeries)
 {
 
-    Console.Write("Zdumiewający efekt koncowy: " + item);
+    Console.Write(item + " ");
 }
 
 // Funkcje
@@ -34,18 +34,27 @@ static int[] Bombelek(int[] series)
                 x++;
             }
         }
-        foreach (int item in series)
-        {
+        //foreach (int item in series)
+        //{
 
-            Console.Write(item + " ");
-        }
+           // Console.Write(item + " ");
+        //}
         if (x == series.Length-1)
         {
             koniec = false;
         }
         Console.Write("\n");
     }
-    return new int[series.Length];
+    //return new int[series.Length];
+    return series;
 }
 
+static int[] kopiuj(int[] copyFrom, int[] copyTo)
+{
+    for(int i = 0; i < copyFrom.Length; i++)
+    {
+        copyTo[i] = copyFrom[i];
+    }
+    return copyTo;
 
+}
