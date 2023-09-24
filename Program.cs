@@ -6,12 +6,6 @@ int[] zbiory = { 9,5,2,0,6};
 int[] newSeries = new int[zbiory.Length];
 
 // Program
-foreach (int item in zbiory)
-{
-
-    Console.Write("Ciag wprowadzony:  " + item + "\n");
-}
-
 Bombelek(zbiory);
 kopiuj(zbiory, newSeries);
 Console.Write("Zdumiewający efekt koncowy: ");
@@ -49,7 +43,7 @@ static int[] Bombelek(int[] series)
         {
             koniec = false;
         }
-        //Console.Write("\n");
+        Console.Write("\n");
     }
     //return new int[series.Length];
     return series;
