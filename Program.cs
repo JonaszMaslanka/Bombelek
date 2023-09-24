@@ -16,11 +16,11 @@ Bombelek(zbiory);
 kopiuj(zbiory, newSeries);
 Console.Write("Zdumiewający efekt koncowy: ");
 
-foreach (var item in newSeries)
+/*foreach (var item in newSeries)
 {
 
     Console.Write(item + " ");
-}
+}*/
 
 // Funkcje
 static int[] Bombelek(int[] series)
